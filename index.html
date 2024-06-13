@@ -15,7 +15,7 @@
 
 <body>
     <!--===== HEADER =====-->
-    <header class="l-header">
+    <header class="l-header" >
         <nav class="nav bd-grid">
             <div>
                 <a href="#" class="nav__logo">David Martin</a>
@@ -23,16 +23,21 @@
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">Education</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    <li class="nav__item"><a href="#home" class="nav__link active-link" data-translate="home">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link" data-translate="about">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link" data-translate="skills">Skills</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link" data-translate="education">Education</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link" data-translate="projects">Projects</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link" data-translate="contact">Contact</a></li>
                 </ul>
             </div>
 
             <div class="nav__toggle" id="nav-toggle">
                 <i class='bx bx-menu'></i>
+            </div>
+            <div class="nav__flags" style="display: flex;">
+                <img src="assets/img/es.png" alt="Español" class="lang-flag" data-lang="es">
+                <img src="assets/img/uk.png" alt="English" class="lang-flag" data-lang="en">
             </div>
         </nav>
     </header>
@@ -41,18 +46,13 @@
         <!--===== HOME =====-->
         <section class="home bd-grid" id="home">
             <div class="home__data">
-                <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">David Martin</span><br>Junior Web
-                    <br> Developer
-                </h1>
-
-                <a href="mailto:davidskisnot@gmail.com" class="button">Contact</a>
+                <h1 class="home__title" data-translate="greeting">Hi,<br>I'm <span class="home__title-color">David Martin</span><br>Web Developer</h1>
+                <a href="mailto:davidskisnot@gmail.com" class="button" data-translate="contactButton">Contact</a>
             </div>
 
             <div class="home__social">
-                <a href="https://www.linkedin.com/in/yodavidm/" target="_blank" class="home__social-icon"><i
-                        class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/yodavidm" target="_blank" class="home__social-icon"><i
-                        class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/yodavidm/" target="_blank" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/yodavidm" target="_blank" class="home__social-icon"><i class='bx bxl-github'></i></a>
             </div>
 
             <div class="home__img">
@@ -65,7 +65,7 @@
                     <g mask="url(#mask0)">
                         <path
                             d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
-                        <image class="home__blob-img" x="25" y="65" style="width: 75vh;" href="assets/img/yo.png" />
+                        <image class="home__blob-img" x="10" y="0" style="width: 75vh;" href="assets/img/xd2.png" />
                     </g>
                 </svg>
             </div>
@@ -73,16 +73,16 @@
 
         <!--===== ABOUT =====-->
         <section class="about section " id="about">
-            <h2 class="section-title">About</h2>
+            <h2 class="section-title" data-translate="aboutTitle">About</h2>
 
             <div class="about__container bd-grid">
                 <div class="about__img">
-                    <img src="assets/img/yo.png" alt="">
+                    <img src="assets/img/xd.png" alt="">
                 </div>
 
                 <div>
-                    <h2 class="about__subtitle">I'm David</h2>
-                    <p class="about__text">I have just finished my web developer studies and I am passionate about web
+                    <h2 class="about__subtitle" data-translate="greeting2">I'm David</h2>
+                    <p class="about__text" data-translate="aboutText">I have just finished my web developer studies and I am passionate about web
                         application development. I consider myself a proactive person who wants to achieve what I set
                         out to do. I already had real project experiences using Spring for backend, Angular for frontend
                         and Docker. I am available to work and eager to start an exciting project.</p>
@@ -92,19 +92,17 @@
 
         <!--===== SKILLS =====-->
         <section class="skills section" id="skills">
-            <h2 class="section-title">Skills</h2>
+            <h2 class="section-title" data-translate="skills">Skills</h2>
 
             <div class="skills__container bd-grid">
                 <div>
-                    <h2 class="skills__subtitle">Profesional Skills</h2>
+                    <h2 class="skills__subtitle" data-translate="professionalSkills">Professional Skills</h2>
                     <div class="skills__data">
                         <div class="skills__names">
                             <i class='bx bxl-html5 skills__icon'></i>
                             <span class="skills__name">HTML5</span>
                         </div>
-                        <div class="skills__bar skills__html">
-
-                        </div>
+                        <div class="skills__bar skills__html"></div>
                         <div>
                             <span class="skills__percentage">95%</span>
                         </div>
@@ -114,9 +112,7 @@
                             <i class='bx bxl-css3 skills__icon'></i>
                             <span class="skills__name">CSS3</span>
                         </div>
-                        <div class="skills__bar skills__css">
-
-                        </div>
+                        <div class="skills__bar skills__css"></div>
                         <div>
                             <span class="skills__percentage">85%</span>
                         </div>
@@ -127,9 +123,7 @@
                             <img src="assets/img/spring.png" width="25px" style="margin-right: 3vh;" alt="">
                             <span class="skills__name">Spring</span>
                         </div>
-                        <div class="skills__bar skills__ux">
-
-                        </div>
+                        <div class="skills__bar skills__ux"></div>
                         <div>
                             <span class="skills__percentage">65%</span>
                         </div>
@@ -140,9 +134,7 @@
                                 alt="">
                             <span class="skills__name">Angular</span>
                         </div>
-                        <div class="skills__bar skills__ux">
-
-                        </div>
+                        <div class="skills__bar skills__ux"></div>
                         <div>
                             <span class="skills__percentage">60%</span>
                         </div>
@@ -153,9 +145,7 @@
                                 alt="">
                             <span class="skills__name">Docker</span>
                         </div>
-                        <div class="skills__bar skills__ux">
-
-                        </div>
+                        <div class="skills__bar skills__ux"></div>
                         <div>
                             <span class="skills__percentage">75%</span>
                         </div>
@@ -170,31 +160,53 @@
 
         <!--===== WORK =====-->
         <section class="work section" id="work">
-            <h2 class="section-title">Education</h2>
+            <h2 class="section-title" data-translate="educationTitle">Education</h2>
 
             <div class="work__container bd-grid" style="text-align: center;">
                 <a href="" class="work__img">
                     <img src="assets/img/atos.jpeg" alt="">
-                    <p>ATOS/EVIDEN SEVILLE 2022-2024</p>
-                    <p>Web Developer student in practice</p>
+                    <p data-translate="atos">ATOS/EVIDEN SEVILLE 2022-2024</p>
+                    <p data-translate="atosDescription">Web Developer student in practice</p>
+                </a>
+                <a href="" class="work__img">
+                    <img src="assets/img/eusa.jpg" alt="">
+                    <p data-translate="eusa">EUSA Nuevas Profesiones 2016-2018</p>
+                    <p data-translate="eusaDescription">2D/3D Animation and Videogames</p>
+                </a>
+                <a href="" class="work__img">
+                    <img src="assets/img/c1.png" alt="">
+                    <p data-translate="c1">C1 Advanced Cambridge Certificate</p>
+                    <p data-translate="c1Description">Native English & Spanish level</p>
+                </a>
+            </div>
+        </section>
 
-                    <a href="" class="work__img">
-                        <img src="assets/img/eusa.jpg" alt="">
-                        <p>EUSA Nuevas Profesiones 2016-2018</p>
-                        <p>2D/3D Animation and Videogames</p>
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/c1.png" alt="">
-                        <p>C1 Advanced Cambridge Certificate</p>
-                        <p>Native English & Spanish level</p>
-                    </a>
+        <!--===== PROJECTS =====-->
+        <section class="work section" id="projects">
+            <h2 class="section-title" data-translate="projectsTitle">Projects</h2>
 
+            <div class="work__container bd-grid" style="text-align: center;">
+                <a href="" class="work__img">
+                    <img src="assets/img/db.jpg" alt="">
+                    <p data-translate="migration">Migration REST API</p>
+                    <p data-translate="migrationDescription">Migration from Drupal to Magento via Rest Api Springboot</p>
+                </a>
+                <a href="https://dbateofront.vercel.app" target="_blank" class="work__img">
+                    <img src="assets/img/debatelologo.png" alt="">
+                    <p data-translate="dbateo">Dbateo Forum</p>
+                    <p data-translate="dbateoDescription">Degree Final Project Fullstack Spring/Angular</p>
+                </a>
+                <a href="" class="work__img">
+                    <img src="assets/img/rasp.png" alt="">
+                    <p data-translate="captive">Captive Portal Raspberry</p>
+                    <p data-translate="captiveDescription">Captive Portal using nginx and hostapd</p>
+                </a>
             </div>
         </section>
 
         <!--===== CONTACT =====-->
         <section class="contact section" id="contact" style="text-align: center;">
-            <h2 class="section-title">Contact</h2>
+            <h2 class="section-title" data-translate="contactTitle">Contact</h2>
             <a href="mailto:davidskisnot@gmail.com">
                 <button><img src="assets/img/mail.png" width="60px" style="border:none;" alt=""></button>
             </a>
@@ -207,12 +219,14 @@
         <p class="footer__copy">&#169; David Martin. All rigths reserved</p>
     </footer>
 
-
     <!--===== SCROLL REVEAL =====-->
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <!--===== MAIN JS =====-->
     <script src="assets/js/main.js"></script>
+
+    <!--===== TRANSLATION JS =====-->
+    <script src="assets/js/translate.js"></script>
 </body>
 
 </html>
